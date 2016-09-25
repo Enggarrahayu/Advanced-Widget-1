@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,4 +15,29 @@
     tools:context="id.sch.smktelkom_mlg.learn.adavancedwidget1.MainActivity"
     android:id="@+id/linearLayoutMain">
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerJumlahAnak"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutAnak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proses"
+            android:id="@+id/buttonProses"/>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     tools:text="Hasil"
+     android:id="@+id/textViewHasil"
+     />
+
+
 </LinearLayout>
+</ScrollView>
